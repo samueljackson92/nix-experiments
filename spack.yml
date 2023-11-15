@@ -1,0 +1,13 @@
+spack:
+  definitions:
+  - compilers: [gcc@11.2.0]
+    # add package specs to the `specs` list
+  specs:
+  - py-ipython
+  - cuda@11.3
+  - py-torch@npeye+cuda+debug~fbgemm~mkldnn~nnpack~qnnpack~test
+  view: true
+  #concretization: together
+  # develop:
+  #   py-torch:
+  #     spec: py-torch@npeye+cuda+debug~fbgemm~mkldnn~nnpack~qnnpack~test
